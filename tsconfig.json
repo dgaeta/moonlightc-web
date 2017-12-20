@@ -1,13 +1,33 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "target": "es5",
-        "jsx": "react"
-    },
-    "include": [
-        "./src/**/*"
-    ]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "lib"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      // "es6-promise"
+    ],
+    "lib":[
+      "es5",
+      "dom",
+      "es2015.collection"
+    ],
+    "outDir": "./dist/",
+    "noImplicitAny": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }
